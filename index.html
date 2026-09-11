@@ -1,88 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciudad Aurora</title>
 </head>
+
 <body>
-        <!-- ENCABEZADO -->
 
-    <header>
-        <h1>Ciudad Aurora</h1>
-         <nav aria-label="Menú principal">
-            <a href="index.html">Inicio</a> |
-            <a href="ciudad.html">Ciudad</a> |
-            <a href="lugares.html">Lugares</a> |
-             <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
+    <!-- CONTENEDOR PRINCIPAL EN TABLA -->
+    <table border="1" width="100%" cellpadding="10" cellspacing="0">
+
+        <!-- HEADER -->
+        <tr>
+            <td colspan="2" align="center">
+                <header>
+                    <h1>Ciudad Aurora</h1>
+                    <nav aria-label="Menú principal">
+                        <a href="index.html">Inicio</a> |
+                        <a href="ciudad.html">Ciudad</a> |
+                        <a href="lugares.html">Lugares</a> |
+                        <a href="contacto.html">Contacto</a>
+                    </nav>
+                </header>
+            </td>
+        </tr>
+
         <!-- MAIN (CONTENIDO + ASIDE) -->
-            <main>
-         <!-- PRESENTACIÓN -->
-        <section id="presentacion">
+        <tr valign="top">
 
-            <h2>Bienvenidos a Ciudad Aurora</h2>
-             <p>Ciudad Aurora es una ciudad <strong>moderna, inclusiva, creativa y comunitaria</strong>.</p>
-             <p>Combina espacios verdes, cultura, tecnología y actividades al aire libre.</p>
-        </section>
-            <!-- CARACTERÍSTICAS -->
-        <section id="caracteristicas">
-              <h2>Características principales</h2>
-             <ul>
-                <li>Grandes espacios verdes.</li>
-                    <li>Ciclovías y calles peatonales.</li>
-                     <li>Murales y arte urbano.</li>
-                    <li>Centros tecnológicos.</li>
-                     <li>Edificios históricos.</li>
-                    <li>Gran variedad de actividades culturales.</li>
-            </ul>
-        </section>
-            <!-- LUGARES -->
-        <section id="lugares">
-                <h2>Lugares de interés<h2>
-                            
-        <article>
-                 <h3>Plaza Central</h3>
-                <p>Es uno de los principales espacios de encuentro de Ciudad Aurora.</p>
-        </article>
-        <article>
-                <h3>Estación Aurora</h3>
-                 <p>Es uno de los edificios históricos que forman parte de la identidad.</p>
-        </article>
-        <article>
-                <h3>Parque del Lago</h3>
-                <p>Es un espacio verde ideal para realizar actividades al aire libre.</p>
-        </article>
-        <article>
-                 <h3>Museo de la Ciudad</h3>
-                <p>Es un espacio dedicado a la historia y cultura de Ciudad Aurora.</p>
-        </article>
+            <!-- COLUMNA IZQUIERDA: SECCIONES Y ARTÍCULOS -->
+            <td width="75%">
+                <div id="main">
 
-        <!-- GALERÍA -->
+                    <!-- PRESENTACIÓN -->
+                    <section id="presentacion">
+                        <h2>Bienvenidos a Ciudad Aurora</h2>
+                        <p>Ciudad Aurora es una ciudad <strong>moderna, inclusiva, creativa y comunitaria</strong>.</p>
+                        <p>Combina espacios verdes, cultura, tecnología y actividades al aire libre.</p>
+                    </section>
+                    <hr>
 
-         <section id="galeria">
-                     <h2>Conocé Ciudad Aurora</h2>
+                    <!-- CARACTERÍSTICAS -->
+                    <section id="caracteristicas">
+                        <h2>Características principales</h2>
+                        <ul>
+                            <li>Grandes espacios verdes.</li>
+                            <li>Ciclovías y calles peatonales.</li>
+                            <li>Murales y arte urbano.</li>
+                            <li>Centros tecnológicos.</li>
+                            <li>Edificios históricos.</li>
+                            <li>Gran variedad de actividades culturales.</li>
+                        </ul>
+                    </section>
+                    <hr>
+
+                    <!-- LUGARES EN MÓDULOS TIPO ARTÍCULOS -->
+                    <section id="lugares">
+                        <h2>Lugares de interés</h2>
+
+                        <table border="1" width="100%" cellpadding="5">
+                            <tr>
+                                <td>
+                                    <article>
+                                        <h3>Plaza Central</h3>
+                                        <p>Es uno de los principales espacios de encuentro de Ciudad Aurora.</p>
+                                    </article>
+                                </td>
+                                <td>
+                                    <article>
+                                        <h3>Estación Aurora</h3>
+                                        <p>Es uno de los edificios históricos que forman parte de la identidad.</p>
+                                    </article>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <article>
+                                        <h3>Parque del Lago</h3>
+                                        <p>Es un espacio verde ideal para realizar actividades al aire libre.</p>
+                                    </article>
+                                </td>
+                                <td>
+                                    <article>
+                                        <h3>Museo de la Ciudad</h3>
+                                        <p>Es un espacio dedicado a la historia y cultura de Ciudad Aurora.</p>
+                                    </article>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                    <hr>
+
+                    <!-- GALERÍA -->
+                    <section id="galeria">
+                        <h2>Conocé Ciudad Aurora</h2>
+                        <figure>
+                            <img src="https://picsum.photos/id/11/367/267" alt="Paisaje representativo">
+                            <figcaption>Paisaje representativo de Ciudad Aurora.</figcaption>
+                        </figure>
+                    </section>
+
+                </div>
+                
+            </td>
+
+            <!-- COLUMNA DERECHA: ASIDE -->
+            <td width="25%">
+                <aside>
+                    <h2>Información destacada</h2>
+                    <p>Ciudad Aurora combina naturaleza, cultura, tecnología y espacios para disfrutar al aire libre.</p>
                     <figure>
-                        <img src="https://picsum.photos/id/11/367/267" alt="Paisaje representativo">
-                     <figcaption>Paisaje representativo de Ciudad Aurora.</figcaption>
+                        <img src="https://picsum.photos/id/191/367/267" width="100" alt="Paisaje natural destacable de Ciudad Aurora">
+                        <figcaption>Vista del entorno natural en Ciudad Aurora.</figcaption>
                     </figure>
-            </section>
-    </main>
-        <!-- ASIDE -->
-            <aside>
-                <h2>Información destacada</h2>
-                <p>Ciudad Aurora combina naturaleza, cultura, tecnología y espacios para disfrutar al aire libre.</p>
-                <figure>
-                     <img src="https://picsum.photos/id/191/367/267" width="100" alt="Paisaje natural destacable de Ciudad Aurora">
-                <figcaption>Vista del entorno natural en Ciudad Aurora.</figcaption>
-                </figure>
-            </aside>
+                </aside>
+            </td>
+
+        </tr>
+
         <!-- FOOTER -->
-             <footer>
+        <tr>
+            <td colspan="2" align="center">
+                <footer>
                     <p>¿Querés comunicarte con nosotros? <a href="contacto.html">Contáctanos aquí</a></p>
                     <p>&copy; 2026 Ciudad Aurora. Todos los derechos reservados.</p>
                     <p>Integrantes: Castillo Jazmín, Espinosa Lautaro, Lunardelli Matías y Narzisi Sofía.</p>
                     <p><a href="#presentacion">Volver al comienzo</a></p>
+                </footer>
+            </td>
+        </tr>
+
+    </table>
+
 </body>
+
 </html>
