@@ -1,0 +1,283 @@
+*{ margin: 0;
+ padding: 0; 
+ box-sizing: border-box; 
+ font-family: 
+ 'Poppins', sans-serif; }
+ 
+body{
+    background-color: #b5f7e1;
+    display:grid;
+    place-items: center;
+    min-height: 100dvh;
+}
+
+.form-container{
+    background-color: #fff;
+display:grid;
+gap:28px;
+width: min(100%, 540px);
+padding:24px;
+padding-top:10px;
+border-radius: 16px;
+}
+
+.contact-header{
+    display:flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #3b3b3b;
+}
+
+.contact-form{
+    display:grid;
+    row-gap: 16x;
+    border-color:#80cfb5 ;
+    border-radius: 18px;
+}
+
+.form-group{
+    display: flex;
+    color: #80cfb5;
+}
+
+.contact-form{
+    color: #80cfb5;
+}
+
+.form-terms{
+    display: grid;
+    align-items: center;
+    border: #80cfb5;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap:6px;
+}
+
+.contact-form label{
+color:#3e705f;
+font-size: 13px;
+}
+
+.form-group :is(input,textarea,select){
+    padding: 14px 12px;
+    border-radius:8px;
+    font-size:14px;
+    outline: 0;
+    background: transparent;
+    border:1px solid #d1d1d1;
+    caret-color: #3e705f;
+}
+
+.form-group textarea{
+    min-height: 110px;
+    resize: none;
+scrollbar-width: thin;
+scrollbar-color: #3e705f transparent;
+}
+
+.contact-form :is(input,textarea,button,a):focus {
+    border-color: #3e705f;
+    outline-color: #80cfb5;
+}
+
+.contact-form :is(input,textarea)::selection {
+    background: #4c8370;
+    color:#ffffff;
+}
+
+.contact-form input[type="checkbox"] {
+    accent-color: #3e705f;
+}
+
+.form-terms{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.submit-btn{
+    font-size: 16px;
+font-weight: 500;
+padding-block: 14px;
+color: white;
+border: 0;
+background :linear-gradient(to right, #80cfb5,#569983);
+border-radius: 8px;
+cursor: pointer;
+}
+
+.submit-btn:hover {
+    background :linear-gradient(to left, #80cfb5,#569983);
+}
+
+h1{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+p{
+    margin-bottom: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+nav{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.contacto{
+    background-color: #b5f7e1;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 700px;
+}
+
+
+hr{
+    width: 100%;
+    margin: 40px auto;
+    background-color: #335c4e;
+}
+
+address{
+    color: #3e705f;
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+section a{
+    margin: 15px 0;
+    color: #3e705f;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+a[href^="tel:"]{
+    color: #3e705f;
+    padding: 20px;
+    border-radius: 10px; 
+    text-decoration: none;   
+}
+
+a[href^="mailto:"]{
+    color: #3e705f;
+    padding: 20px;
+    border-radius: 10px; 
+    text-decoration: none;   
+}
+
+
+a[href^=instagram]{
+color: #3e705f;
+    padding: 20px;
+    border-radius: 10px; 
+    text-decoration: none; 
+
+}
+
+section a:hover{
+    color: #3e705f;
+    text-decoration: underline;
+    text-align: center;
+}
+
+footer{
+    background-color: #b5f7e1;
+    color: #3e705f;
+    text-align:center;
+    padding: 25px 15px;
+    margin-top: 25px 15px;
+    margin-top: 30px;
+}
+
+footer p{
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.footer a{
+    color: #335c4e;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+footer a[href^="contacto.html"]{
+    display: inline-block;
+    background-color: #b5f7e1;
+    color: #4c8370;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+footer a[href^="contacto.html"]:hover{
+    text-decoration: underline;
+}
+
+nav a[href^="index.html"]{
+    display: inline-block;
+    background-color: #8cc0ae;
+    color: #f8f7f7;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+nav a[href^="ciudad.html"]{
+    display: inline-block;
+    background-color: #8cc0ae;
+    color: #f8f7f7;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+nav a[href^="lugares.html"]{
+    display: inline-block;
+    background-color: #8cc0ae;
+    color: #f8f7f7;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+nav a[href^="contacto.html"]{
+    display: inline-block;
+    background-color: #8cc0ae;
+    color: #f8f7f7;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
