@@ -436,3 +436,35 @@ body:has(.contenedor-principal) footer {
     margin-left: 0;
     margin-right: 0;
 }
+
+/* DATOS CLAVE DE CIUDAD AURORA */
+
+
+.datos-ciudad dl {
+    margin-bottom: 20px;
+}
+
+
+.datos-ciudad dt {
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+.datos-ciudad dd {
+    margin-top: 5px;
+    margin-left: 15px;
+    line-height: 1.6;
+}
+
+
+.informacion-destacada > figure {
+    margin-top: 20px;
+}
+
+
+.informacion-destacada figcaption {
+    color: var(--color-texto);
+    line-height: 1.5;
+}
