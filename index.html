@@ -4,44 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Ciudad Aurora</title>
+
+<!-- Fuente de Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
+<!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header>
+        <h1>Ciudad Aurora</h1>
 
-    <!-- CONTENEDOR PRINCIPAL EN TABLA -->
-    <table border="1" width="100%" cellpadding="10" cellspacing="0">
+        <nav aria-label="Menú principal">
+            <a href="index.html">Inicio</a>
+            <a href="ciudad.html">Ciudad</a>
+            <a href="lugares.html">Lugares</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
-        <!-- HEADER -->
-        <tr>
-            <td colspan="2" align="center">
-                <header>
-                    <h1>Ciudad Aurora</h1>
-                    <nav aria-label="Menú principal">
-                        <a href="index.html">Inicio</a> |
-                        <a href="ciudad.html">Ciudad</a> |
-                        <a href="lugares.html">Lugares</a> |
-                        <a href="contacto.html">Contacto</a>
-                    </nav>
-                </header>
-            </td>
-        </tr>
+    <!-- CONTENINDO PRINCIPAL--> 
+    <main class="contenedor-principal"></main>
 
-        <!-- MAIN (CONTENIDO + ASIDE) -->
-        <tr valign="top">
+        <div class="contenido"></div>
 
-            <!-- COLUMNA IZQUIERDA: SECCIONES Y ARTÍCULOS -->
-            <td width="75%">
-                <div id="main">
+        <!-- PRESENTACIÓN -->
+       <section id="presentacion">
+                <h2>Bienvenidos a Ciudad Aurora</h2>
+     <p>
+                    Ciudad Aurora es una ciudad
+                    <strong>moderna, inclusiva, creativa y comunitaria</strong>,
+                    pensada para el encuentro y el desarrollo de sus habitantes.
+                </p>
 
-                    <!-- PRESENTACIÓN -->
-                    <section id="presentacion">
-                        <h2>Bienvenidos a Ciudad Aurora</h2>
-                        <p>Ciudad Aurora es una ciudad <strong>moderna, inclusiva, creativa y comunitaria</strong>.</p>
-                        <p>Combina espacios verdes, cultura, tecnología y actividades al aire libre.</p>
-                    </section>
-                    <hr>
+                <p>
+                    Combina espacios verdes, cultura, tecnología y actividades
+                    al aire libre para promover una vida
+                    <em>activa y participativa</em>.
+                </p>
+            </section>
 
+                  <hr> 
+
+        <!-- DATOS PRINCIPALES DE LA CIUDAD -->
+
+            <section id="datos-ciudad">
+                <h2>Datos principales de Ciudad Aurora</h2>
+
+                <dl>
+                    <dt>Espacios verdes</dt>
+                    <dd>Cuenta con plazas y parques para disfrutar de la naturaleza.</dd>
+
+                    <dt>Movilidad</dt>
+                    <dd>Dispone de ciclovías y calles peatonales.</dd>
+
+                    <dt>Cultura</dt>
+                    <dd>Se destaca por sus murales, su arte urbano y sus actividades culturales.</dd>
+
+                    <dt>Tecnología</dt>
+                    <dd>Cuenta con centros tecnológicos que forman parte de su identidad.</dd>
+
+                    <dt>Patrimonio histórico</dt>
+                    <dd>Conserva edificios históricos que representan parte de su historia.</dd>
+                </dl>
+            </section>
+
+            <hr>
                     <!-- CARACTERÍSTICAS -->
                     <section id="caracteristicas">
                         <h2>Características principales</h2>
@@ -56,84 +92,99 @@
                     </section>
                     <hr>
 
-                    <!-- LUGARES EN MÓDULOS TIPO ARTÍCULOS -->
+                    <!-- LUGARES DE INTERÉS -->
                     <section id="lugares">
                         <h2>Lugares de interés</h2>
+ <div class="tarjetas-lugares">
 
-                        <table border="1" width="100%" cellpadding="5">
-                            <tr>
-                                <td>
-                                    <article>
-                                        <h3>Plaza Central</h3>
-                                        <p>Es uno de los principales espacios de encuentro de Ciudad Aurora.</p>
-                                    </article>
-                                </td>
-                                <td>
-                                    <article>
-                                        <h3>Estación Aurora</h3>
-                                        <p>Es uno de los edificios históricos que forman parte de la identidad.</p>
-                                    </article>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <article>
-                                        <h3>Parque del Lago</h3>
-                                        <p>Es un espacio verde ideal para realizar actividades al aire libre.</p>
-                                    </article>
-                                </td>
-                                <td>
-                                    <article>
-                                        <h3>Museo de la Ciudad</h3>
-                                        <p>Es un espacio dedicado a la historia y cultura de Ciudad Aurora.</p>
-                                    </article>
-                                </td>
-                            </tr>
-                        </table>
-                    </section>
-                    <hr>
+                    <article class="tarjeta">
+                        <h3>Plaza Central</h3>
+                        <p>
+                            Es uno de los principales espacios de encuentro
+                            de Ciudad Aurora.
+                        </p>
+                    </article>
 
+                    <article class="tarjeta">
+                        <h3>Estación Aurora</h3>
+                        <p>
+                            Es uno de los edificios históricos que forman
+                            parte de la identidad de la ciudad.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3>Parque del Lago</h3>
+                        <p>
+                            Es un espacio verde ideal para realizar
+                            actividades al aire libre.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta">
+                        <h3>Museo de la Ciudad</h3>
+                        <p>
+                            Es un espacio dedicado a la historia y la cultura
+                            de Ciudad Aurora.
+                        </p>
+                    </article>
+
+                </div>
+            </section>
+
+            <hr>
                     <!-- GALERÍA -->
                     <section id="galeria">
                         <h2>Conocé Ciudad Aurora</h2>
+
                         <figure>
-                            <img src="https://picsum.photos/id/11/367/267" alt="Paisaje representativo">
-                            <figcaption>Paisaje representativo de Ciudad Aurora.</figcaption>
+                            <img 
+                                class="imagen-contenido"
+                            src="https://picsum.photos/id/11/367/267" alt="Paisaje representativo">
+
+                            <figcaption>Paisaje representativo de Ciudad Aurora.
+
+                            </figcaption>
                         </figure>
                     </section>
 
                 </div>
                 
-            </td>
+            
 
-            <!-- COLUMNA DERECHA: ASIDE -->
-            <td width="25%">
-                <aside>
+            <!-- INFORMACIÓN COMPLEMENTARIA -->
+
+                <aside class="informacion-destacada">
                     <h2>Información destacada</h2>
-                    <p>Ciudad Aurora combina naturaleza, cultura, tecnología y espacios para disfrutar al aire libre.</p>
+                    <p>
+                        Ciudad Aurora combina naturaleza, cultura, tecnología y espacios para disfrutar al aire libre.
+                    </p>
                     <figure>
-                        <img src="https://picsum.photos/id/191/367/267" width="400" alt="Paisaje natural destacable de Ciudad Aurora">
-                        <figcaption>Vista del entorno natural en Ciudad Aurora.</figcaption>
+                        <img 
+                        class="imagen-contenido"
+                        src="https://picsum.photos/id/191/367/267" width="400" alt="Paisaje natural destacable de Ciudad Aurora">
+                        <figcaption>
+                            Vista del entorno natural en Ciudad Aurora.
+                        </figcaption>
                     </figure>
                 </aside>
-            </td>
+            </main>
 
-        </tr>
+        
 
         <!-- FOOTER -->
-        <tr>
-            <td colspan="2" align="center">
                 <footer>
-                    <p>¿Querés comunicarte con nosotros? <a href="contacto.html">Contáctanos aquí</a></p>
+
+                    <p>
+                        ¿Querés comunicarte con nosotros? <a href="contacto.html">Contáctanos aquí</a>
+                    </p>
                     <p>&copy; 2026 Ciudad Aurora. Todos los derechos reservados.</p>
-                    <p>Integrantes: Castillo Jazmín, Espinosa Lautaro, Lunardelli Matías y Narzisi Sofía.</p>
+
+                    <p>
+                        Integrantes: Castillo Jazmín, Espinosa Lautaro, Lunardelli Matías y Narzisi Sofía.
+                    </p>
                     <p><a href="#presentacion">Volver al comienzo</a></p>
                 </footer>
-            </td>
-        </tr>
-
-    </table>
-
 </body>
 
 </html>
