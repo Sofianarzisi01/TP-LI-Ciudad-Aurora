@@ -1,149 +1,159 @@
-*{ margin: 0;
- padding: 0; 
- box-sizing: border-box; 
- font-family: 
- 'Poppins', sans-serif; }
- 
-body{
+
+/* VARIABLES DE COLORES */
+
+:root {
+    --color-principal: #3e705f;
+    --color-secundario: #b5f7e1;
+    --color-acento: #80cfb5;
+    --color-texto: #3b3b3b;
+    --color-fondo: #f5fbf8;
+    --color-blanco: #ffffff;
+    --color-borde: #d1d1d1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ESTILOS GENERALES */
+
+body {
     background-color: #b5f7e1;
-    display:grid;
+    display: grid;
     place-items: center;
     min-height: 100dvh;
 }
 
-.form-container{
+/* FORMULARIO */
+
+.form-container {
     background-color: #fff;
-display:grid;
-gap:28px;
-width: min(100%, 540px);
-padding:24px;
-padding-top:10px;
-border-radius: 16px;
+    display: grid;
+    gap: 28px;
+    width: min(100%, 540px);
+    padding: 24px;
+    padding-top: 10px;
+    border-radius: 16px;
 }
 
-.contact-header{
-    display:flex;
+.contact-header {
+    display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.contact-title{
+.contact-title {
     font-size: 24px;
     font-weight: 500;
     color: #3b3b3b;
 }
 
-.contact-form{
-    display:grid;
-    row-gap: 16x;
-    border-color:#80cfb5 ;
-    border-radius: 18px;
-}
-
-.form-group{
-    display: flex;
-    color: #80cfb5;
-}
-
-.contact-form{
-    color: #80cfb5;
-}
-
-.form-terms{
+.contact-form {
     display: grid;
+    row-gap: 16px;
+    border-color: #80cfb5;
+    border-radius: 18px;
+    color: #80cfb5;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #80cfb5;
+}
+
+.form-terms {
+    display: flex;
     align-items: center;
+    gap: 10px;
     border: #80cfb5;
 }
 
-.form-group{
-    display: flex;
-    flex-direction: column;
-    gap:6px;
+.contact-form label {
+    color: #3e705f;
+    font-size: 13px;
 }
 
-.contact-form label{
-color:#3e705f;
-font-size: 13px;
-}
-
-.form-group :is(input,textarea,select){
+.form-group :is(input, textarea, select) {
     padding: 14px 12px;
-    border-radius:8px;
-    font-size:14px;
+    border-radius: 8px;
+    font-size: 14px;
     outline: 0;
     background: transparent;
-    border:1px solid #d1d1d1;
+    border: 1px solid #d1d1d1;
     caret-color: #3e705f;
 }
 
-.form-group textarea{
+.form-group textarea {
     min-height: 110px;
     resize: none;
-scrollbar-width: thin;
-scrollbar-color: #3e705f transparent;
+    scrollbar-width: thin;
+    scrollbar-color: #3e705f transparent;
 }
 
-.contact-form :is(input,textarea,button,a):focus {
+.contact-form :is(input, textarea, button, a):focus {
     border-color: #3e705f;
     outline-color: #80cfb5;
 }
 
-.contact-form :is(input,textarea)::selection {
+.contact-form :is(input, textarea)::selection {
     background: #4c8370;
-    color:#ffffff;
+    color: #ffffff;
 }
 
 .contact-form input[type="checkbox"] {
     accent-color: #3e705f;
 }
 
-.form-terms{
-    display:flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.submit-btn{
+.submit-btn {
     font-size: 16px;
-font-weight: 500;
-padding-block: 14px;
-color: white;
-border: 0;
-background :linear-gradient(to right, #80cfb5,#569983);
-border-radius: 8px;
-cursor: pointer;
+    font-weight: 500;
+    padding-block: 14px;
+    color: white;
+    border: 0;
+    background: linear-gradient(to right, #80cfb5, #569983);
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .submit-btn:hover {
-    background :linear-gradient(to left, #80cfb5,#569983);
+    background: linear-gradient(to left, #80cfb5, #569983);
 }
 
-h1{
+/* ESTILOS GENERALES DE TEXTO */
+
+h1 {
     margin-top: 20px;
     margin-bottom: 30px;
     text-align: center;
 }
 
-h2{
+h2 {
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
-p{
+p {
     margin-bottom: 35px;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     margin-bottom: 30px;
 }
 
-nav{
+nav {
     padding-bottom: 30px;
     margin-bottom: 20px;
 }
 
-.contacto{
+/* CONTACTO */
+
+.contacto {
     background-color: #b5f7e1;
     padding: 30px;
     text-align: center;
@@ -152,20 +162,13 @@ nav{
     max-width: 700px;
 }
 
-
-hr{
-    width: 100%;
-    margin: 40px auto;
-    background-color: #335c4e;
-}
-
-address{
+address {
     color: #3e705f;
     margin-bottom: 20px;
     font-size: 26px;
 }
 
-section a{
+section a {
     margin: 15px 0;
     color: #3e705f;
     font-weight: bold;
@@ -175,61 +178,61 @@ section a{
     align-items: center;
 }
 
-a[href^="tel:"]{
+a[href^="tel:"] {
     color: #3e705f;
     padding: 20px;
-    border-radius: 10px; 
-    text-decoration: none;   
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-a[href^="mailto:"]{
+a[href^="mailto:"] {
     color: #3e705f;
     padding: 20px;
-    border-radius: 10px; 
-    text-decoration: none;   
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-
-a[href^=instagram]{
-color: #3e705f;
+a[href^="instagram"] {
+    color: #3e705f;
     padding: 20px;
-    border-radius: 10px; 
-    text-decoration: none; 
-
+    border-radius: 10px;
+    text-decoration: none;
 }
 
-section a:hover{
+section a:hover {
     color: #3e705f;
     text-decoration: underline;
     text-align: center;
 }
 
-footer{
+/* FOOTER */
+
+footer {
     background-color: #b5f7e1;
     color: #3e705f;
-    text-align:center;
+    text-align: center;
     padding: 25px 15px;
-    margin-top: 25px 15px;
     margin-top: 30px;
+    width: 100%;
 }
 
-footer p{
+footer p {
     margin: 12px 0;
     font-size: 14px;
 }
 
-.footer a{
+.footer a {
     color: #335c4e;
     text-decoration: none;
 }
 
-.footer a:hover{
+.footer a:hover {
     text-decoration: underline;
 }
 
-footer a[href^="contacto.html"]{
+footer a[href^="contacto.html"] {
     display: inline-block;
-    background-color: #b5f7e1;
+    background-color:  #3b3b3b;
     color: #4c8370;
     padding: 10px 20px;
     text-decoration: none;
@@ -237,47 +240,199 @@ footer a[href^="contacto.html"]{
     font-weight: bold;
 }
 
-footer a[href^="contacto.html"]:hover{
+footer a[href^="contacto.html"]:hover {
     text-decoration: underline;
 }
 
-nav a[href^="index.html"]{
+/* BOTONES DEL MENÚ */
+
+nav a[href^="index.html"],
+nav a[href^="ciudad.html"],
+nav a[href^="lugares.html"],
+nav a[href^="contacto.html"] {
     display: inline-block;
     background-color: #8cc0ae;
     color: #f8f7f7;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold
+    font-weight: bold;
 }
 
-nav a[href^="ciudad.html"]{
-    display: inline-block;
-    background-color: #8cc0ae;
-    color: #f8f7f7;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold
+/* NUEVO: FORMATO DEL INDEX*/
+
+/* Fondo y distribución de la página de inicio */
+
+body:has(.contenedor-principal) {
+    display: block;
+    min-height: 100vh;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
 
-nav a[href^="lugares.html"]{
-    display: inline-block;
-    background-color: #8cc0ae;
-    color: #f8f7f7;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold
+/* Encabezado del index */
+
+body:has(.contenedor-principal) header {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
-nav a[href^="contacto.html"]{
-    display: inline-block;
-    background-color: #8cc0ae;
-    color: #f8f7f7;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold
+body:has(.contenedor-principal) header h1 {
+    margin: 0 0 20px;
+    color: var(--color-blanco);
 }
 
+/* Menú del index */
+
+body:has(.contenedor-principal) nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+body:has(.contenedor-principal) nav a {
+    margin-bottom: 0;
+}
+
+/* Dos columnas principales */
+
+.contenedor-principal {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(280px, 1.1fr);
+    gap: 15px;
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 0 15px;
+    align-items: start;
+}
+
+/* Columna izquierda */
+
+.contenido {
+    min-width: 0;
+    padding: 10px;
+    border-left: 1px solid var(--color-borde);
+    border-right: 1px solid var(--color-borde);
+    background-color: var(--color-blanco);
+}
+
+/* Secciones blancas del index */
+
+.contenido section {
+    padding: 20px 12px;
+    margin: 0;
+    background-color: var(--color-blanco);
+}
+
+.contenido h2 {
+    margin: 10px 0 20px;
+}
+
+.contenido p {
+    margin-bottom: 20px;
+}
+
+/* Líneas divisorias */
+
+.contenido hr,
+.informacion-destacada hr {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid var(--color-borde);
+    background-color: transparent;
+}
+
+/* Tarjetas de lugares de interés */
+
+.tarjetas-lugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+}
+
+.tarjeta {
+    padding: 20px 12px;
+    border: 1px solid var(--color-borde);
+    border-radius: 0;
+    background-color: var(--color-blanco);
+    box-shadow: none;
+}
+
+/* Columna derecha */
+
+.informacion-destacada {
+    min-width: 0;
+    padding: 20px 10px;
+    border-left: 1px solid var(--color-borde);
+    border-right: 1px solid var(--color-borde);
+    background-color: var(--color-blanco);
+}
+
+.informacion-destacada h2 {
+    margin: 20px 0;
+}
+
+/* Imágenes y epígrafes */
+
+.imagen-contenido {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+figure {
+    margin: 0 0 20px;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Listas de la columna derecha */
+
+.informacion-destacada ul {
+    padding-left: 35px;
+    margin-bottom: 20px;
+}
+
+/* Footer del index */
+
+body:has(.contenedor-principal) footer {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+}
+
+body:has(.contenedor-principal) footer a {
+    color: var(--color-blanco);
+}
+
+/* Adaptación a celulares */
+
+@media (max-width: 800px) {
+    .contenedor-principal {
+        grid-template-columns: 1fr;
+    }
+
+    .contenido,
+    .informacion-destacada {
+        border: 1px solid var(--color-borde);
+    }
+}
+
+body:has(.contenedor-principal) footer {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
