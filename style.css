@@ -10,12 +10,11 @@
     --color-blanco: #ffffff;
     --color-borde: #d1d1d1;
 }
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 /* ESTILOS GENERALES */
@@ -243,22 +242,6 @@ footer a[href^="contacto.html"] {
 footer a[href^="contacto.html"]:hover {
     text-decoration: underline;
 }
-
-/* BOTONES DEL MENÚ */
-
-nav a[href^="index.html"],
-nav a[href^="ciudad.html"],
-nav a[href^="lugares.html"],
-nav a[href^="contacto.html"] {
-    display: inline-block;
-    background-color: #8cc0ae;
-    color: #f8f7f7;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
 /* NUEVO: FORMATO DEL INDEX*/
 
 /* Fondo y distribución de la página de inicio */
@@ -304,15 +287,12 @@ body:has(.contenedor-principal) nav a {
 /* Dos columnas principales */
 
 .contenedor-principal {
-    display: grid;
-    grid-template-columns: minmax(0, 2fr) minmax(280px, 1.1fr);
-    gap: 15px;
-    max-width: 1600px;
-    margin: 20px auto;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin: 20px 0;
     padding: 0 15px;
-    align-items: start;
 }
-
 /* Columna izquierda */
 
 .contenido {
@@ -350,20 +330,33 @@ body:has(.contenedor-principal) nav a {
     background-color: transparent;
 }
 
-/* Tarjetas de lugares de interés */
+/* Tarjetas de lugares con flexbox */
 
 .tarjetas-lugares {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .tarjeta {
-    padding: 20px 12px;
+    flex: 1 1 220px;
     border: 1px solid var(--color-borde);
-    border-radius: 0;
+    border-radius: 10px;
     background-color: var(--color-blanco);
-    box-shadow: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta .card-body {
+    padding: 20px;
+}
+
+.tarjeta .card-title {
+    color: var(--color-principal);
+    margin-bottom: 15px;
+}
+
+.tarjeta .card-text {
+    margin-bottom: 0;
 }
 
 /* Columna derecha */
@@ -395,9 +388,8 @@ figure {
     margin: 0 0 20px;
 }
 
-figcaption {
-    margin-top: 5px;
-    font-size: 14px;
+figure figcaption {
+    text-align: center;
 }
 
 /* Listas de la columna derecha */
@@ -419,12 +411,7 @@ body:has(.contenedor-principal) footer a {
 }
 
 /* Adaptación a celulares */
-
 @media (max-width: 800px) {
-    .contenedor-principal {
-        grid-template-columns: 1fr;
-    }
-
     .contenido,
     .informacion-destacada {
         border: 1px solid var(--color-borde);
@@ -440,19 +427,19 @@ body:has(.contenedor-principal) footer {
 /* DATOS CLAVE DE CIUDAD AURORA */
 
 
-.datos-ciudad dl {
+#datos-ciudad dl {
     margin-bottom: 20px;
 }
 
 
-.datos-ciudad dt {
+#datos-ciudad dt {
     color: var(--color-principal);
     font-weight: bold;
     margin-top: 15px;
 }
 
 
-.datos-ciudad dd {
+#datos-ciudad dd {
     margin-top: 5px;
     margin-left: 15px;
     line-height: 1.6;
@@ -467,4 +454,38 @@ body:has(.contenedor-principal) footer {
 .informacion-destacada figcaption {
     color: var(--color-texto);
     line-height: 1.5;
+}
+
+/* CORRECCIÓN NAVBAR - ANCHO COMPLETO */
+
+body:has(.contenedor-principal) header {
+    display: block;
+    width: 100%;
+    background-color: var(--color-principal);
+    padding: 0;
+    margin: 0;
+}
+
+body:has(.contenedor-principal) .navbar {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-principal);
+    padding: 15px 0;
+}
+
+body:has(.contenedor-principal) .navbar .container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/* POSICIONAMIENTO */
+
+body:has(.contenedor-principal) header {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+.navbar-brand {
+    font-size: 34px;
+    font-weight: 800;
 }
