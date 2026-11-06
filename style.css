@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 /* VARIABLES DE COLORES */
 
@@ -22,6 +23,17 @@
 body {
     background-color: #b5f7e1;
     display: grid;
+=======
+*{ margin: 0;
+ padding: 0; 
+ box-sizing: border-box; 
+ font-family: 
+ 'Poppins', sans-serif; }
+ 
+body{
+    background-color: #f9fcfa;
+    display:grid;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     place-items: center;
     min-height: 100dvh;
 }
@@ -150,10 +162,15 @@ nav {
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 /* CONTACTO */
 
 .contacto {
     background-color: #b5f7e1;
+=======
+.contacto{
+    background-color: #757e7c;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     padding: 30px;
     text-align: center;
     border-radius: 12px;
@@ -161,22 +178,41 @@ nav {
     max-width: 700px;
 }
 
+<<<<<<< HEAD
 address {
     color: #3e705f;
+=======
+
+hr{
+    width: 100%;
+    margin: 40px auto;
+    background-color: #1b2936;
+}
+
+address{
+    color: #1b2936;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     margin-bottom: 20px;
     font-size: 26px;
 }
 
+<<<<<<< HEAD
 section a {
     margin: 15px 0;
     color: #3e705f;
+=======
+section a{
+    margin: 4px 0;
+    color: #1b2936;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     font-weight: bold;
     text-decoration: none;
     display: flex;
-    gap: 10px;
+    gap: 3px;
     align-items: center;
 }
 
+<<<<<<< HEAD
 a[href^="tel:"] {
     color: #3e705f;
     padding: 20px;
@@ -200,10 +236,38 @@ a[href^="instagram"] {
 
 section a:hover {
     color: #3e705f;
+=======
+a[href^="tel:"]{
+    color: #1b2936;
+    padding: 2px 4px;
+    border-radius: 10px; 
+    text-decoration: none;   
+}
+
+a[href^="mailto:"]{
+    color: #1b2936;
+    padding: 2px 4px;
+    border-radius: 10px; 
+    text-decoration: none;   
+}
+
+
+a[href^=instagram]{
+color: #1b2936;
+    padding: 2px 4px;
+    border-radius: 10px; 
+    text-decoration: none; 
+
+}
+
+section a:hover{
+    color: #1b2936;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     text-decoration: underline;
     text-align: center;
 }
 
+<<<<<<< HEAD
 /* FOOTER */
 
 footer {
@@ -211,6 +275,14 @@ footer {
     color: #3e705f;
     text-align: center;
     padding: 25px 15px;
+=======
+footer{
+    background-color: #757e7c;
+    color: #1b2936;
+    text-align:center;
+    padding: 2px 4px;
+    margin-top: 25px 15px;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     margin-top: 30px;
     width: 100%;
 }
@@ -220,8 +292,13 @@ footer p {
     font-size: 14px;
 }
 
+<<<<<<< HEAD
 .footer a {
     color: #335c4e;
+=======
+.footer a{
+    color: #1b2936;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     text-decoration: none;
 }
 
@@ -231,8 +308,13 @@ footer p {
 
 footer a[href^="contacto.html"] {
     display: inline-block;
+<<<<<<< HEAD
     background-color:  #3b3b3b;
     color: #4c8370;
+=======
+    background-color: #757e7c;
+    color: #1b2936;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
@@ -244,6 +326,7 @@ footer a[href^="contacto.html"]:hover {
 }
 /* NUEVO: FORMATO DEL INDEX*/
 
+<<<<<<< HEAD
 /* Fondo y distribución de la página de inicio */
 
 body:has(.contenedor-principal) {
@@ -488,4 +571,135 @@ body:has(.contenedor-principal) header {
 .navbar-brand {
     font-size: 34px;
     font-weight: 800;
+=======
+nav a[href^="index.html"]{
+    display: inline-block;
+    background-color: #757e7c;
+    color: #1b2936;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+nav a[href^="ciudad.html"]{
+    display: inline-block;
+    background-color: #757e7c;
+    color: #1b2936;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+nav a[href^="lugares.html"]{
+    display: inline-block;
+    background-color: #757e7c;
+    color: #1b2936;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+nav a[href^="contacto.html"]{
+    display: inline-block;
+    background-color: #757e7c;
+    color: #1b2936;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold
+}
+
+:root{
+    --color-principal: #3e705f;
+    --color-secundario: #b5f7e1;
+    --color-acento: #80cfb5;
+    --color-texto: #3b3b3b;
+    --color-fondo: #f5fbf8;
+    --color-blanco: #ffffff;
+    --color-borde: #d1d1d1;
+}
+
+/* ==========================================
+   /* Flexbox 
+   ========================================== */
+
+/* Menú de navegación o contenedores que usen Flexbox horizontal */
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Grilla de elementos o cards usando Flexbox con wrap y gap (requisito de la consigna) */
+.seccion-flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Espacio automático entre elementos */
+}
+
+.seccion-flex-grid > * {
+    flex: 1 1 280px; /* Comportamiento responsivo pedido en las pautas */
+}
+
+
+/* ==========================================
+   /* Posicionamiento 
+   ========================================== */
+
+/* Header sticky para que se quede fijo al hacer scroll */
+header.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+
+/* Ejemplo de contenedor con position relative para elementos absolutos (por si usas banners o badges) */
+.banner-container {
+    position: relative;
+}
+
+.badge-absoluto {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+
+/* ==========================================
+   /* Bootstrap - Personalizaciones 
+   ========================================== */
+
+/* Personalización de colores y fuentes sobre Bootstrap */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Bordes redondeados y estilos prolijos para las tarjetas y formularios */
+.card {
+    border-radius: 1rem !important;
+    border: none;
+}
+
+.form-control, .form-select {
+    border-radius: 0.5rem !important;
+}
+
+/* Efecto hover suave en los botones */
+.btn-primary {
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/*Evitar que el textarea se pueda estirar o manipular su tamaño, para mantener el diseño consistente*/
+.textarea{
+    resize: none !important;
+>>>>>>> eeb1d09 (Actualizacion de contacto y estilos con Bootstrap)
 }
